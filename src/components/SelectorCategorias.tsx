@@ -2,7 +2,28 @@
 import { CATEGORIAS_PRINCIPALES } from '@/data/Categorias';
 import { useGameStoreTyped } from '@/hook/useGameStoreTyped';
 import type { CategoriaPrincipal } from '@/types/Juego.type';
+import { 
+  Globe, 
+  Palette, 
+  Film, 
+  FlaskConical, 
+  Trophy, 
+  Map, 
+  ScrollText, 
+  Target 
+} from 'lucide-react';
 import React, { useState } from 'react';
+
+const ICONOS_CATEGORIAS: Record<CategoriaPrincipal, React.ReactNode> = {
+  cultura: <Globe className="w-12 h-12" />,
+  arte: <Palette className="w-12 h-12" />,
+  entretenimiento: <Film className="w-12 h-12" />,
+  ciencia: <FlaskConical className="w-12 h-12" />,
+  deportes: <Trophy className="w-12 h-12" />,
+  geografia: <Map className="w-12 h-12" />,
+  historia: <ScrollText className="w-12 h-12" />,
+  todas: <Target className="w-12 h-12" />
+};
 
 const SelectorCategorias: React.FC = () => {
   const { setEstado, setCategorias } = useGameStoreTyped.useAcciones();
@@ -51,13 +72,13 @@ const SelectorCategorias: React.FC = () => {
               <button
                 key={cat.id}
                 onClick={() => toggleCategoria(cat.id)}
-                className={`p-6 rounded-2xl transition-all duration-300 flex flex-col items-center gap-3 border-2 ${
+                className={`p-6 rounded-3xl transition-all duration-300 flex flex-col items-center gap-3 border-2 ${
                   isSelected 
                     ? `${cat.color} border-transparent scale-105 shadow-lg` 
                     : 'bg-gray-800 border-gray-700 hover:border-gray-500 hover:bg-gray-750'
                 }`}
               >
-                <span className="text-4xl">{cat.icono}</span>
+                <span className="text-white">{ICONOS_CATEGORIAS[cat.id]}</span>
                 <span className="font-bold text-lg">{cat.nombre}</span>
               </button>
             );

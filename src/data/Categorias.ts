@@ -7,7 +7,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'cultura',
     nombre: 'Cultura General',
-    icono: '🌍',
+    icono: '',
     color: 'bg-blue-500',
     subcategorias: ['paises', 'capitales', 'monumentos', 'comida', 'tradiciones'],
     activa: true
@@ -15,7 +15,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'arte',
     nombre: 'Arte',
-    icono: '🎨',
+    icono: '',
     color: 'bg-purple-500',
     subcategorias: ['pintura', 'escultura', 'artistas', 'tecnicas', 'movimientos'],
     activa: true
@@ -23,7 +23,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'entretenimiento',
     nombre: 'Entretenimiento',
-    icono: '🎬',
+    icono: '',
     color: 'bg-green-500',
     subcategorias: ['peliculas', 'musica', 'series', 'videojuegos'],
     activa: true
@@ -31,7 +31,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'ciencia',
     nombre: 'Ciencia',
-    icono: '🔬',
+    icono: '',
     color: 'bg-red-500',
     subcategorias: ['fisica', 'biologia', 'astronomia', 'quimica', 'matematicas'],
     activa: true
@@ -39,7 +39,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'deportes',
     nombre: 'Deportes',
-    icono: '⚽',
+    icono: '',
     color: 'bg-orange-500',
     subcategorias: ['futbol', 'baloncesto', 'tenis', 'otros'],
     activa: true
@@ -47,7 +47,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'geografia',
     nombre: 'Geografía',
-    icono: '🗺️',
+    icono: '',
     color: 'bg-teal-500',
     subcategorias: ['montanas', 'rios', 'paises', 'oceanos'],
     activa: true
@@ -55,7 +55,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'historia',
     nombre: 'Historia',
-    icono: '📜',
+    icono: '',
     color: 'bg-amber-600',
     subcategorias: ['personajes', 'eventos', 'guerras'],
     activa: true
@@ -63,7 +63,7 @@ export const CATEGORIAS_PRINCIPALES: CategoriaConfig[] = [
   {
     id: 'todas',
     nombre: 'Todas las Categorías',
-    icono: '🎯',
+    icono: '',
     color: 'bg-yellow-500',
     subcategorias: [], // Vacío significa todas las subcategorías
     activa: true
