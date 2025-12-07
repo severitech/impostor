@@ -1,0 +1,91 @@
+// data/culturaGeneralData.js
+export const datosCulturaGeneral = [
+  // PAÍSES - PISTAS DIVERSAS
+  { id: "CGen01", palabra: "Francia", pista: "Torre" },
+  { id: "CGen02", palabra: "Italia", pista: "Botas" },
+  { id: "CGen03", palabra: "Japón", pista: "Asia" },
+  { id: "CGen04", palabra: "México", pista: "Ají" },
+  { id: "CGen05", palabra: "Egipto", pista: "" },
+  { id: "CGen06", palabra: "India", pista: "Elefante" },
+  { id: "CGen07", palabra: "Brasil", pista: "Carnaval" },
+  { id: "CGen08", palabra: "Australia", pista: "Playas" },
+  { id: "CGen09", palabra: "Canadá", pista: "Invierno" },
+  { id: "CGen10", palabra: "China", pista: "Dragón" },
+  { id: "CGen11", palabra: "España", pista: "Flamenco" },
+  { id: "CGen12", palabra: "Alemania", pista: "Cerveza" },
+  { id: "CGen13", palabra: "Rusia", pista: "Frío" },
+  { id: "CGen14", palabra: "Inglaterra", pista: "Lluvia" },
+  { id: "CGen15", palabra: "Grecia", pista: "Olivos" },
+  
+  // CAPITALES
+  { id: "CGen16", palabra: "París", pista: "Moda" },
+  { id: "CGen17", palabra: "Roma", pista: "Antigua" },
+  { id: "CGen18", palabra: "Tokio", pista: "Tecnología" },
+  { id: "CGen19", palabra: "El Cairo", pista: "Antiguo" },
+  { id: "CGen20", palabra: "Berlín", pista: "Muro" },
+  { id: "CGen21", palabra: "Londres", pista: "Niebla" },
+  { id: "CGen22", palabra: "Madrid", pista: "Plaza" },
+  { id: "CGen23", palabra: "Washington", pista: "Política" },
+  { id: "CGen24", palabra: "Moscú", pista: "Kremlin" },
+  { id: "CGen25", palabra: "Brasilia", pista: "Moderno" },
+
+  // MONUMENTOS
+  { id: "CGen26", palabra: "Torre Eiffel", pista: "Hierro" },
+  { id: "CGen27", palabra: "Gran Muralla", pista: "Defensa" },
+  { id: "CGen28", palabra: "Pirámides", pista: "Triángulo" },
+  { id: "CGen29", palabra: "Cristo Redentor", pista: "Arms" },
+  { id: "CGen30", palabra: "Coliseo", pista: "Gladiadores" },
+  { id: "CGen31", palabra: "Machu Picchu", pista: "Andes" },
+  { id: "CGen32", palabra: "Taj Mahal", pista: "Amor" },
+  { id: "CGen33", palabra: "Estatua Libertad", pista: "Bienvenida" },
+  { id: "CGen34", palabra: "Big Ben", pista: "Campana" },
+  { id: "CGen35", palabra: "Opera Sídney", pista: "Conchas" },
+
+  // ANIMALES NACIONALES
+  { id: "CGen36", palabra: "Cóndor", pista: "Vuelo" },
+  { id: "CGen37", palabra: "Águila", pista: "Libertad" },
+  { id: "CGen38", palabra: "Oso", pista: "Fuerza" },
+  { id: "CGen39", palabra: "León", pista: "Corona" },
+  { id: "CGen40", palabra: "Tigre", pista: "Rayas" },
+  { id: "CGen41", palabra: "Dragón", pista: "Fuego" },
+  { id: "CGen42", palabra: "Kiwi", pista: "Nocturno" },
+  { id: "CGen43", palabra: "Canguro", pista: "Bolsa" },
+  { id: "CGen44", palabra: "Panda", pista: "Bambú" },
+  { id: "CGen45", palabra: "Castor", pista: "Presas" },
+
+  // COMIDA TÍPICA
+  { id: "CGen46", palabra: "Paella", pista: "Azafrán" },
+  { id: "CGen47", palabra: "Sushi", pista: "Alga" },
+  { id: "CGen48", palabra: "Pizza", pista: "Queso" },
+  { id: "CGen49", palabra: "Tacos", pista: "Maíz" },
+  { id: "CGen50", palabra: "Curry", pista: "Especias" },
+  { id: "CGen51", palabra: "Pasta", pista: "Harina" },
+  { id: "CGen52", palabra: "Hamburguesa", pista: "Carne" },
+  { id: "CGen53", palabra: "Ceviche", pista: "Pescado" },
+  { id: "CGen54", palabra: "Croissant", pista: "Mantequilla" },
+  { id: "CGen55", palabra: "Kimchi", pista: "Repollo" },
+
+  // DEPORTES NACIONALES
+  { id: "CGen56", palabra: "Fútbol", pista: "Pelota" },
+  { id: "CGen57", palabra: "Beisbol", pista: "Bate" },
+  { id: "CGen58", palabra: "Cricket", pista: "Palo" },
+  { id: "CGen59", palabra: "Rugby", pista: "Oval" },
+  { id: "CGen60", palabra: "Sumo", pista: "Peso" },
+  { id: "CGen61", palabra: "Ski", pista: "Nieve" },
+  { id: "CGen62", palabra: "Surf", pista: "Tabla" },
+  { id: "CGen63", palabra: "Karate", pista: "Arte" },
+  { id: "CGen64", palabra: "Polo", pista: "Caballo" },
+  { id: "CGen65", palabra: "Hockey", pista: "Hielo" },
+
+  // LENGUAJES
+  { id: "CGen66", palabra: "Español", pista: "Ñ" },
+  { id: "CGen67", palabra: "Francés", pista: "Bonjour" },
+  { id: "CGen68", palabra: "Inglés", pista: "Hello" },
+  { id: "CGen69", palabra: "Alemán", pista: "Danke" },
+  { id: "CGen70", palabra: "Italiano", pista: "Ciao" },
+  { id: "CGen71", palabra: "Portugués", pista: "Obrigado" },
+  { id: "CGen72", palabra: "Chino", pista: "Ideogramas" },
+  { id: "CGen73", palabra: "Japonés", pista: "Kanji" },
+  { id: "CGen74", palabra: "Ruso", pista: "Cirílico" },
+  { id: "CGen75", palabra: "Árabe", pista: "Derecha" }
+];
