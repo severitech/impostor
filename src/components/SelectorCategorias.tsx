@@ -14,7 +14,7 @@ const SelectorCategorias: React.FC = () => {
       return;
     }
 
-    let nuevaSeleccion = seleccion.filter(c => c !== 'todas');
+    let nuevaSeleccion: CategoriaPrincipal[] = seleccion.filter(c => c !== 'todas');
     
     if (nuevaSeleccion.includes(id)) {
       nuevaSeleccion = nuevaSeleccion.filter(c => c !== id);

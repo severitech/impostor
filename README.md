@@ -6,6 +6,8 @@ En este juego, todos los jugadores reciben una palabra secreta, excepto uno (o m
 
 ## 🚀 Características Principales
 
+
+
 *   **Multijugador Local**: Diseñado para jugar en un solo dispositivo (Pass & Play).
 *   **Múltiples Categorías**:
     *   🌍 Cultura General

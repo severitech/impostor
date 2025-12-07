@@ -192,6 +192,9 @@ export class CategoriaManager {
       'arte': 0,
       'entretenimiento': 0,
       'ciencia': 0,
+      'deportes': 0,
+      'geografia': 0,
+      'historia': 0,
       'todas': 0
     };
 

@@ -21,7 +21,7 @@ interface GameStore {
   // Navegación y estado
   setEstado: (estado: EstadoJuego) => void;
   setCategorias: (categorias: CategoriaPrincipal[]) => void;
-  setNumImpostores: (num: number) => void;
+  setNumImpostores: (num: 1 | 2 | 3) => void;
   setDificultad: (dificultad: 'facil' | 'dificil') => void;
 
   // Acciones principales

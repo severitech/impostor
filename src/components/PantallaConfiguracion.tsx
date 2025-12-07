@@ -59,7 +59,7 @@ const PantallaConfiguracion: React.FC = () => {
           </div>
 
           <div className="flex gap-4 justify-center">
-            {[1, 2, 3].map((num) => (
+            {([1, 2, 3] as const).map((num) => (
               <button
                 key={num}
                 onClick={() => setNumImpostores(num)}
