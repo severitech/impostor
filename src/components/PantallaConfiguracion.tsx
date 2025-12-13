@@ -26,13 +26,22 @@ const PantallaConfiguracion: React.FC = () => {
   };
 
   const manejarIniciarJuego = () => {
+    // Validación del lado del cliente primero
+    const minimoJugadores = configuracion.numImpostores + 1;
+    
+    if (jugadores.length < minimoJugadores) {
+      alert(`Se necesitan al menos ${minimoJugadores} jugadores para jugar con ${configuracion.numImpostores} impostor(es)`);
+      return;
+    }
+    
     const exito = iniciarJuego();
     if (!exito) {
-      alert(
-        `Se necesitan al menos ${configuracion.numImpostores + 1} jugadores`
-      );
+      alert('Error al iniciar el juego. Por favor, intenta de nuevo.');
     }
   };
+
+  // Verificar si se puede iniciar el juego
+  const puedeIniciar = jugadores.length >= configuracion.numImpostores + 1;
 
   return (
     <div className="w-full flex-1 bg-gray-900 text-white p-4 md:p-6 flex flex-col items-center overflow-hidden">
@@ -115,11 +124,11 @@ const PantallaConfiguracion: React.FC = () => {
         {/* Botón Iniciar */}
         <button
           onClick={manejarIniciarJuego}
-          disabled={jugadores.length < configuracion.numImpostores + 1}
+          disabled={!puedeIniciar}
           className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed py-3 md:py-4 rounded-3xl text-lg md:text-xl font-bold shadow-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
         >
           <Play className="w-6 h-6 fill-current" />
-          {jugadores.length < configuracion.numImpostores + 1
+          {!puedeIniciar
             ? `Faltan jugadores (Mínimo ${configuracion.numImpostores + 1})`
             : "COMENZAR JUEGO"}
         </button>

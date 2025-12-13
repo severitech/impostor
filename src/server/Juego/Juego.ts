@@ -122,14 +122,21 @@ export const useGameStore = create<GameStore>((set, get) => ({
   iniciarJuego: (): boolean => {
     const { jugadores, configuracion } = get();
     
-    if (jugadores.length < configuracion.numImpostores + 1) return false;
+    // Validación: mínimo de jugadores requeridos
+    const minimoJugadores = configuracion.numImpostores + 1;
+    if (jugadores.length < minimoJugadores) {
+      console.error(`Se necesitan al menos ${minimoJugadores} jugadores. Actualmente hay ${jugadores.length}`);
+      return false;
+    }
     
+    // Intentar iniciar una nueva ronda
     const rondaIniciada = get().iniciarNuevaRonda();
     if (rondaIniciada) {
       set({ estado: 'jugando' });
       return true;
     }
     
+    console.error('Error al iniciar la primera ronda');
     return false;
   },
 
