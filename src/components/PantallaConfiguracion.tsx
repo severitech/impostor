@@ -35,7 +35,7 @@ const PantallaConfiguracion: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-4 md:p-6 flex flex-col items-center">
+    <div className="w-full flex-1 bg-gray-900 text-white p-4 md:p-6 flex flex-col items-center overflow-hidden">
       <div className="max-w-2xl w-full space-y-4 md:space-y-6 relative">
         {/* Botón Atrás */}
         <button
@@ -47,15 +47,21 @@ const PantallaConfiguracion: React.FC = () => {
 
         {/* Encabezado */}
         <div className="text-center pt-8 md:pt-2">
-          <h1 className="text-3xl md:text-4xl font-bold mb-1 md:mb-2">Configuración</h1>
-          <p className="text-sm md:text-base text-gray-400">Prepara tu partida</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-1 md:mb-2">
+            Configuración
+          </h1>
+          <p className="text-sm md:text-base text-gray-400">
+            Prepara tu partida
+          </p>
         </div>
 
         {/* Selector de Impostores */}
         <div className="bg-gray-800 p-4 md:p-6 rounded-3xl shadow-lg">
           <div className="flex items-center gap-3 mb-2 md:mb-3">
             <Users className="w-5 h-5 md:w-6 md:h-6 text-red-500" />
-            <h2 className="text-lg md:text-xl font-bold">Número de Impostores</h2>
+            <h2 className="text-lg md:text-xl font-bold">
+              Número de Impostores
+            </h2>
           </div>
 
           <div className="flex gap-2 justify-center">
@@ -84,9 +90,9 @@ const PantallaConfiguracion: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-2 justify-center">
             <button
-              onClick={() => setDificultad('facil')}
+              onClick={() => setDificultad("facil")}
               className={`flex-1 py-2 rounded-2xl font-bold text-sm md:text-base transition-all ${
-                configuracion.dificultad === 'facil'
+                configuracion.dificultad === "facil"
                   ? "bg-green-600 text-white shadow-lg scale-105"
                   : "bg-gray-700 text-gray-400 hover:bg-gray-600"
               }`}
@@ -94,9 +100,9 @@ const PantallaConfiguracion: React.FC = () => {
               Fácil (Con Pista)
             </button>
             <button
-              onClick={() => setDificultad('dificil')}
+              onClick={() => setDificultad("dificil")}
               className={`flex-1 py-2 rounded-2xl font-bold text-sm md:text-base transition-all ${
-                configuracion.dificultad === 'dificil'
+                configuracion.dificultad === "dificil"
                   ? "bg-red-600 text-white shadow-lg scale-105"
                   : "bg-gray-700 text-gray-400 hover:bg-gray-600"
               }`}
@@ -124,7 +130,10 @@ const PantallaConfiguracion: React.FC = () => {
             <List className="w-5 h-5 text-blue-400" /> Lista de Jugadores
           </h2>
 
-          <form onSubmit={manejarAgregarJugador} className="flex gap-2 mb-4 md:mb-6">
+          <form
+            onSubmit={manejarAgregarJugador}
+            className="flex gap-2 mb-4 md:mb-6"
+          >
             <input
               type="text"
               value={nuevoJugador}

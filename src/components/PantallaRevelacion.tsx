@@ -31,8 +31,8 @@ const PantallaRevelacion: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6 flex flex-col items-center justify-center relative">
-      {/* Botón Atrás (Solo visible antes de revelar para no spoilear si se sale por error) */}
+      <div className="w-full flex-1 bg-gray-900 text-white flex flex-col items-center p-6 overflow-hidden">
+   {/* Botón Atrás (Solo visible antes de revelar para no spoilear si se sale por error) */}
       {!revelado && (
         <button 
           onClick={() => setEstado('configuracion')}

@@ -56,8 +56,8 @@ const SelectorCategorias: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-6">
-      <div className="text-center max-w-4xl w-full">
+    <div className="w-full flex-1 bg-gray-900 text-white flex flex-col items-center p-6 overflow-hidden">
+  <div className="text-center max-w-4xl w-full">
         <h1 className="text-6xl font-black mb-2 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
           IMPOSTOR
         </h1>
